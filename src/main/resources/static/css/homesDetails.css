@@ -1,0 +1,35 @@
+.container{
+    width: 70%;
+padding-top: 80px;
+}
+.title{
+    padding-bottom: 50px;
+
+}
+#title{
+font-size: 25px;
+font-weight: bolder;
+    padding-bottom: 10px;
+
+
+}
+.info{
+
+    float: right;
+}
+.info2{
+    border-top: 2px solid skyblue;
+    padding: 10px;
+}
+
+ul li{
+    list-style: none;
+}
+.updelete{
+    align-items: end;
+    text-align: end;
+}
+
+#the-content{
+    padding-bottom: 50px;
+}

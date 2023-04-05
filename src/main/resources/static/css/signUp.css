@@ -1,0 +1,52 @@
+.signUp-form {
+    padding-top: 80px;
+    width: 70%;
+    margin: auto;
+    display: table;
+
+}
+
+.signUp-form div{
+    padding: 10px;
+    display: table-row;
+
+}
+
+.signUp-form div input{
+    border-radius: 4px;
+    display: table-cell;
+
+}
+.signUp-form div label{
+    padding-bottom: 30px;
+    display: table-cell;
+    padding-left: 100px;
+}
+.signUp-form div textarea{
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 39px;
+
+}
+
+.button{
+    display: table-cell;
+    border-radius: 10px;
+    color:white;
+    background-color: seagreen;
+    border: none;
+    padding:3px;
+}
+.buttons{
+    width: 25%;
+    padding-top: 30px;
+    margin: auto;
+    text-align: end;
+    padding-right:30px;
+
+}
+
+main div span{
+    position: fixed;
+
+}

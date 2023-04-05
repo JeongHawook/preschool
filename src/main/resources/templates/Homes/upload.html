@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" th:href="@{/css/header.css}"/>
+    <link rel="stylesheet" th:href="@{/css/upload.css}"/>
+</head>
+<header id="header"></header>
+<body>
+<div class="post-form">
+
+    <form id="adminForm">
+        <div class="formstatus">저장 혹은 수정</div>
+        <div>
+            <label for="homeTitle">제목</label>
+            <input type="text" id="homeTitle" name="homeTitle">
+            <span id="titleError" style="color: red"></span>
+        </div>
+
+        <div>
+            <label for="homeName">어린이집이름</label>
+            <input type="text" id="homeName" name="homeName">
+            <span id="NameError" style="color: red"></span>
+        </div>
+
+        <div>
+            <label for="homeCCTV">cctv여부</label>
+            <input type="text" id="homeCCTV" name="homeCCTV">
+            <span id="CCTVError" style="color: red"></span>
+        </div>
+        <div>
+            <label for="homeSize">평수</label>
+            <input type="number" id="homeSize" name="homeSize">
+            <span id="SizeError" style="color: red"></span>
+        </div>
+
+        <div>
+            <label for="homeAddress">주소</label>
+            <input type="text" id="homeAddress" name="homeAddress">
+            <span id="AddressError" style="color: red"></span>
+        </div>
+
+        <div>
+            <label for="homeRegister">자격증 등록여부</label>
+            <input type="text" id="homeRegister" name="homeRegister">
+            <span id="RegError" style="color: red"></span>
+        </div>
+
+        <div>
+            <label for="homeChildren">아이</label>
+            <input type="text" id="homeChildren" name="homeChildren">
+            <span id="ChildError" style="color: red"></span>
+        </div>
+
+        <div>
+            <label for="homeNumber">연락쳐</label>
+            <input type="text" id="homeNumber" name="homeNumber">
+            <span id="NoError" style="color: red"></span>
+        </div>
+
+        <div>
+            <label for="fileImage">이미지 : </label>
+            <input type="file" id="fileImage" name="fileImage" >
+            <p><img id="thumbnail" alt="Preview"/> </p>
+        </div>
+
+        <div>
+            <label for="homeMeal">식대여부</label>
+            <input type="text" id="homeMeal" name="homeMeal">
+            <span id="mealError" style="color: red"></span>
+        </div>
+
+
+        <div>
+            <span class="homeVideo">https://youtu.be/  </span>
+            <input name="homeVideo" id="homeVideo">
+        </div>
+        <div>
+            <label for="homeDetails">본문</label>
+            <textarea id="homeDetails" name="homeDetails"></textarea>
+            <span id="DetailError" style="color: red"></span>
+        </div>
+
+        <div class="buttons">
+            <button type="button" onclick="formUpdate()" class="btn btn-primary" id="update">수정</button>
+            <button type="button" onclick="formSend()" class="btn btn-primary" id="save">저장</button>
+            <button type="button" class="btn btn-secondary" id="cancel-button">취소</button>
+        </div>
+    </form>
+</div>
+<script src="/js/header.js" th:inline="javascript" type="text/javascript"></script>
+<script src="/js/upload.js" th:inline="javascript" type="text/javascript"></script>
+</body>
+<footer id="footer">
+    <hr>
+</footer>
+</html>

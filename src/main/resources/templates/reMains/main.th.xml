@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<thlogic>
+    <attr sel="#header" th:replace="header :: header" >
+
+    </attr>
+
+    <attr sel="#footer" th:replace="footer :: footer" />
+    <attr sel=".admin" th:object="${adminPost}">
+
+    <attr sel="tbody" >
+        <attr sel="tr[0]" th:each="adminPost : ${adminPost}">
+            <attr sel="td.title/a" th:text="${adminPost.homeTitle}" th:href="@{'/homes/posts/' + ${adminPost.homeId}}" />
+
+    </attr>
+</attr>
+    </attr>
+
+
+    <attr sel=".user" th:object="${userPost}">
+
+        <attr sel="tbody" >
+            <attr sel="tr[0]" th:each="userPost : ${userPost}">
+                <attr sel="td.title/a" th:text="${userPost.title}" th:href="@{'/community/posts/' + ${userPost.userPostId}}"  />
+
+            </attr>
+        </attr>
+    </attr>
+</thlogic>

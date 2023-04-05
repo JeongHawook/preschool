@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Hawook Jeong">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" th:href="@{/css/header.css}"/>
+    <link rel="stylesheet" th:href="@{/css/signUp.css}"/>
+</head>
+<body>
+
+<header id="header">
+
+    <hr>
+</header>
+<main>
+
+    <form class="signUp-form">
+
+        <div>
+            <label class="signLabel" for="username">*이름</label>
+            <input class="signInput" name="username" id="username">
+            <button class="button" onclick="validateUsername()" type="button">중복확인</button>
+            <span id="NameBlankError" style="color: red"></span>
+
+            <span id="NameError" style="color: red">이미 존재하는 아이디 입니다</span>
+            <span id="NameSuccess" style="color: green">사용 가능한 아이디 입니다</span>
+
+
+
+        </div>
+
+        <div>
+            <label class="signLabel" for="password">*비밀번호</label>
+            <input class="signInput" name="password" id="password">
+            <span id="PassError" style="color: red"></span>
+
+        </div>
+        <div>
+            <label class="signLabel" for="nickname">*닉네임</label>
+            <input class="signInput" name="nickname" id="nickname">
+            <span class="NickError" style="color: red"></span>
+        </div>
+        <div>
+            <label class="signLabel" for="email">*이메일</label>
+            <input class="signInput" name="email" id="email">
+            <button class="button" onclick="validateEmail()" type="button">중복확인</button>
+            <span id="EmailBlankError" style="color:red "></span>
+
+            <span id="EmailError" style="color:red ">이미 존재하는 이메일 입니다</span>
+            <span id="EmailSuccess" style="color:green ">사용 가능한 이메일 입니다</span>
+
+
+
+        </div>
+        <div>
+            <label class="signLabel" for="child"> 아이정보</label>
+            <input class="signInput" name="child" id="child">
+        </div>
+        <div>
+            <label class="signLabel" for="memo">주의사항</label>
+            <input class="signInput" name="memo" id="memo">
+        </div>
+
+
+
+    </form>
+    <div class="buttons">
+        <button class="btn btn-success me-md-1" type="button" onclick="userSignIns()">가입</button>
+    </div>
+</main>
+
+
+<footer id="footer">
+    <hr>
+</footer>
+<script src="/js/header.js" th:inline="javascript" type="text/javascript"></script>
+<script src="/js/signUp.js" th:inline="javascript" type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+main .tables {
+
+    justify-content: center;
+
+    display: flex;
+    text-align: center;
+}
+
+main .admin {
+    width: 30%;
+    padding: 30px;
+}
+
+main .user {
+    width: 30%;
+    padding: 30px;
+
+}
+
+main table a{
+    text-decoration: none;
+    color:black;
+}
+
+.toppic {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.picture {
+    background-image: url("child2.jpg");
+
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px; /* You must set a specified height */
+    background-position: center;
+}
